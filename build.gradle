@@ -1,0 +1,21 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'org.aircode.opentracing.jaeger'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile group: 'io.opentracing.contrib', name: 'opentracing-spring-web-autoconfigure', version: '0.3.2'
+	compile group: 'io.jaegertracing', name: 'jaeger-client', version: '0.35.5'
+}
