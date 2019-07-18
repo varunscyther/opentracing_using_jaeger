@@ -18,4 +18,5 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compile group: 'io.opentracing.contrib', name: 'opentracing-spring-web-autoconfigure', version: '0.3.2'
 	compile group: 'io.jaegertracing', name: 'jaeger-client', version: '0.35.5'
+	compile group: 'io.jaegertracing', name: 'jaeger-core', version: '0.35.5'
 }
